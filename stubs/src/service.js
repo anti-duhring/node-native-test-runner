@@ -4,7 +4,8 @@ class Service {
     }
 
     async getFilms(url) {
-
+        const { title, release_date } = await this.makeRequest(url)
+        return { title, release_date }
     }
 }
 
