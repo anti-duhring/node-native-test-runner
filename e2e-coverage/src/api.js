@@ -17,14 +17,15 @@ const routes = {
 
         if(username !== DEFAULT_USER.username || password !== DEFAULT_USER.password) {
             response.writeHead(401)
-            response.write('Login failed!')
-
-            return response.end()
+            return response.end('Login failed!')
         }
 
-        return response.end()
+        return response.end('ok')
     },
-    default: (request, response) => response.end('Not Found')
+    default: (request, response) => {
+        response.writeHead(404)
+        return response.end('Not found')
+    }
 }
 function handler(request, response) {
     const { url, method } = request
@@ -37,3 +38,5 @@ function handler(request, response) {
 }
 
 const app = http.createServer(handler).listen(3000, () => console.log('running in port 3000'))
+
+module.exports = app
