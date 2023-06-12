@@ -1,0 +1,16 @@
+[
+  {
+    "id": "3307d10d-8086-4628-8be2-a9ba9776ab36",
+    "name": "Model 3",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "aa90f184-b789-4aa5-be06-91120713fb7d",
+    "name": "Countach",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  }
+]
